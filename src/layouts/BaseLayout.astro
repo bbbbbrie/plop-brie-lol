@@ -4,7 +4,7 @@ import "~/styles/base.css";
 
 import smartypants from "smartypants";
 
-const siteName = "Astro Photo Grid";
+const siteName = "plop pics";
 
 export interface Props {
   title: string;
@@ -27,6 +27,21 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · ${siteName}`
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonicalURL} />
+    <meta name="fediverse:creator" content="@brie@infosec.exchange">
+    <meta name="fediverse:creator" content="@brie@social.lol">
+    <meta name="fediverse:creator" content="@plop@social.lol">
+    <meta name="fediverse:creator" content="@brie@brie.lol">
+    <meta name="fediverse:creator" content="@omg@brie.lol">
+    <meta name="fediverse:creator" content="@payphones@hachyderm.io">
+    <meta name="fediverse:creator" content="@brie@ohai.social">
+    <a rel="me" href="https://infosec.exchange/@brie"></a>
+    <a rel="me" href="https://brie.lol/@brie"></a>
+    <a rel="me" href="https://brie.lol/@omg"></a>
+    <a rel="me" href="https://social.lol/@brie"></a>
+    <a rel="me" href="https://social.lol/@plop"></a>
+    <a rel="me" href="https://hachyderm.io/@payphones"></a>
+    <a rel="me" href="https://ohai.social/@brie"></a>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title set:html={smartypants(pageTitle, 1)} />
     <meta name="description" content={smartypants(description, 1)} />
