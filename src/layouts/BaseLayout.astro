@@ -44,6 +44,7 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · ${siteName}`
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title set:html={smartypants(pageTitle, 1)} />
+    <meta name="neatstats_verification" content="NeatStats:18ef85ff90541c4b">
     <script src="https://neatstats.net/view.js" defer is:inline></script>
     <meta name="description" content={smartypants(description, 1)} />
     <meta property="og:title" content={smartypants(title, 1)} />
